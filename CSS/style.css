@@ -4,15 +4,15 @@
     padding: 0;
     font-family: sans-serif;
 }
-/* body{
+body{
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-} */
-body {
-	background: linear-gradient(180deg, #0a23f2, #ff0016, #f300ff, #8f4ff4);
+}
+/* body {
+	background: linear-gradient(180deg, #9932CC, #9400D3, #f300ff, #660099);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
-}
+} */
  
 @keyframes gradient {
 	0% {
@@ -177,6 +177,8 @@ a{
 
 .card__add{
     justify-self: end;
+    border-radius: 100px;
+    border-width: 4px;
 }
   
 .card__prices {
@@ -223,11 +225,13 @@ a{
 button{
     padding: 9px;
     margin: 20px 0 0 0;
-    background-color: rgb(139, 56, 139);
     color: white;
     cursor: pointer;
     position: relative;
     display: block;
+    background: linear-gradient(180deg, #9932CC, #9400D3, #f300ff, #660099);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
     /* overflow: hidden; */
 }
 
@@ -259,7 +263,7 @@ button:hover{
     width: 100%;
 }
 
-.simple_text{
+/* .simple_text{
     text-align: center;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -279,7 +283,7 @@ button:hover{
 .simple_text:hover{
     background: rgb(31,0,36);
     background: linear-gradient(90deg, rgba(31,0,36,1) 0%, rgba(228,28,190,1) 1%, rgba(180,67,204,1) 48%, rgba(0,212,255,1) 100%);
-}
+} */
 
 
 .slides {
@@ -434,92 +438,39 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 
-.kcp {
-    height: 100%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding-top: 300px;
-    
-  }
-  
-.icecream > .flavor {
-    position: relative;
-
-    width: 290px;
-    height: 360px;
-    
-    border-radius: 80px 80px 10px 10px;
-    overflow: hidden;
-    
-    &:after {
-    content: '';
-    
-    position: absolute;
-    left: 21px;
-    bottom: 20px;
-    
-    width: 20px;
-    height: 170px;
-    
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.5);
-    
-    }
-    
+* {box-sizing: border-box;}
+.caption-top {
+  width: 700px;
+  margin: 50px auto 0;
+  border: 5px solid #3e0530;
+  position: relative;
+}
+.caption-top img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.caption-top h2 {
+  margin: 0;
+  color: white;
+  line-height: 1.1;
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 10px 20px 10px 10px;
+  border-bottom-right-radius: 20px;
+  background: #3e0530;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  box-shadow: -3px -1px 3px -3px #3e0530, 5px 10px 20px -5px hsla(0, 0%, 0%, .4);
+}
+.date {
+  font-family: "Open Sans", sans-serif;
+  font-size: .7em;
 }
 
-.icecream > .flavor > .flavours {
-    position: relative;
-    top: 0%;
-    left: -20%;
-
-    width: 140%;
-    height: 120%;
-    
-    background-image: linear-gradient(0deg,
-    #f63a99 25%,
-    #30dcf6 25%,
-    #30dcf6 25%,
-    #30dcf6 50%,
-    #f2d200 50%,
-    #f2d200 50%,
-    #f2d200 75%,
-    #70ca5c 75%);
-    background-position: 0px 0px;
-    background-repeat: repeat-y;
-
-    animation: flavours 100s linear infinite;
-    transform: rotate(155deg);
-}
-  
-.icecream > .stick {
-width: 57px;
-height: 86px;
-
-background: #E09C5F;
-border-radius: 0 0 25px 25px;
-
-display: block;
-margin: 0 auto;
-
-&:after {
-    display: block;
-    content: '';
-
-    width: 100%;
-    height: 24px;
-    
-    background: #8D613B;
-    
-}
-
-}
-  
-@keyframes flavours {
-to {
-    background-position: 0 -1000vh;
-}
+.card_two{
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
